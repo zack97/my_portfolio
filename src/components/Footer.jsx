@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/zacklogo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,13 +12,13 @@ function Footer() {
         </div>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="blog">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <a href="contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
             <a href="https://github.com/zack97">Github</a>
