@@ -101,7 +101,8 @@ nav button#menuButton {
 }
 
 .main {
-  background-color: #deebee;
+  /* background-color: #deebee; */
+  border-bottom: 3px solid #deebee;
   padding: 0 148px;
   display: flex;
   align-items: center;
