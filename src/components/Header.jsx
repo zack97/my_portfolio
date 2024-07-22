@@ -34,11 +34,11 @@ function Header() {
             <span>Works</span>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/single-work">
             <span>Single Work</span>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/blog">
             <span>Blog</span>
