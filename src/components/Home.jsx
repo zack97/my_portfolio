@@ -190,7 +190,9 @@ const Portfolio = () => {
       <div className="recent">
         <div className="header">
           <h4>Recent Posts</h4>
-          <a href="/blog">View all</a>
+          <Link to="/blog">
+            <a>View all</a>
+          </Link>
         </div>
         <div className="posts">
           <div className="post-item">
