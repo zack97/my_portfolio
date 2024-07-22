@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/zacklogo.png";
 import profile from "../assets/profile_image1.jpg";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -9,16 +10,26 @@ const About = () => {
       <nav>
         <div className="logo">
           <img src={logo} alt="Logo" />
-          <a href="/">ZackProg</a>
+          <Link to="/">
+            <a>ZackProg</a>
+          </Link>
         </div>
         <div className="nav-links">
-          <a href="/">Home</a>
-          <a href="/works">Works</a>
-          <a href="/single-work">Single Work</a>
-          <a href="/blog">Blog</a>
-          <a className="selected" href="/contact">
-            Contact
-          </a>
+          <Link to="/">
+            <a>Home</a>
+          </Link>
+          <Link to="/works">
+            <a>Works</a>
+          </Link>
+          <Link to="/single-work">
+            <a>Single Work</a>
+          </Link>
+          <Link to="/blog">
+            <a>Blog</a>
+          </Link>
+          <Link to="/contact">
+            <a className="selected">Contact</a>
+          </Link>
         </div>
       </nav>
 

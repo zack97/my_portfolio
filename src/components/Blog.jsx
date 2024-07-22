@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/zacklogo.png";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const [expandedPost, setExpandedPost] = useState(null);
@@ -66,16 +67,26 @@ const Blog = () => {
       <nav>
         <div className="logo">
           <img src={logo} alt="Logo" />
-          <a href="/">ZackProg</a>
+          <Link to="/">
+            <a>ZackProg</a>
+          </Link>
         </div>
         <div className="nav-links">
-          <a href="/">Home</a>
-          <a href="works">Works</a>
-          <a href="single-work">Single Work</a>
-          <a className="selected" href="blog">
-            Blog
-          </a>
-          <a href="contact">Contact</a>
+          <Link to="/">
+            <a>Home</a>
+          </Link>
+          <Link to="/works">
+            <a>Works</a>
+          </Link>
+          <Link to="/single-work">
+            <a>Single Work</a>
+          </Link>
+          <Link to="/blog">
+            <a className="selected">Blog</a>
+          </Link>
+          <Link to="/contact">
+            <a>Contact</a>
+          </Link>
         </div>
       </nav>
 

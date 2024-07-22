@@ -56,16 +56,26 @@ const Portfolio = () => {
       <nav>
         <div className="logo">
           <img src={logo} alt="Logo" />
-          <a href="/">ZackProg</a>
+          <Link to="/">
+            <a>ZackProg</a>
+          </Link>
         </div>
         <div className="nav-links">
-          <a className="selected" href="/">
-            Home
-          </a>
-          <a href="/works">Works</a>
-          <a href="/single-work">Single Work</a>
-          <a href="/blog">Blog</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">
+            <a className="selected">Home</a>
+          </Link>
+          <Link to="/works">
+            <a>Works</a>
+          </Link>
+          <Link to="/single-work">
+            <a>Single Work</a>
+          </Link>
+          <Link to="/blog">
+            <a>Blog</a>
+          </Link>
+          <Link to="/contact">
+            <a>Contact</a>
+          </Link>
         </div>
       </nav>
 
