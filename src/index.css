@@ -842,6 +842,10 @@ footer .bottom .links a {
     width: 100%;
   }
 
+  .main img {
+    width: 70%;
+  }
+
   .load-more-button {
     width: auto;
   }
