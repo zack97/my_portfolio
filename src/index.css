@@ -842,6 +842,10 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 500px) {
+  .info {
+    padding-left: 25px;
+  }
+
   .skills .skill-items .item {
     width: 100%;
   }
