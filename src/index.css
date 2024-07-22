@@ -103,9 +103,9 @@ nav .nav-links a.selected {
 .main img {
   width: 400px;
   height: 350px;
-  border-radius: 140px;
+  border-radius: 100px;
   box-shadow: 1px 0px 1px #1a237e;
-  padding: 20px;
+  padding: 10px;
 }
 
 .skills {

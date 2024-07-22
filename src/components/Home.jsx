@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import "./Portfolio.css";
 import Footer from "./Footer";
 
-const Portfolio = () => {
+const Home = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const [showMore, setShowMore] = useState(false);
@@ -83,7 +83,7 @@ const Portfolio = () => {
         <div className="info">
           <h2>
             Hello, I'm Zacharie, <br />
-            Full-Stack Developer | Problem Solver
+            Full-Stack Developer | Creative Problem Solver
           </h2>
           <div className={`profile-text ${isExpanded ? "expanded" : ""}`}>
             <p>
@@ -254,4 +254,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Home;
