@@ -839,6 +839,10 @@ footer .bottom .links a {
       }
     }
   }
+
+  div .content {
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 576px) {
