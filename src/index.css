@@ -28,6 +28,9 @@ img {
   font-weight: bold;
   color: #007bff;
 }
+.noneDisplay {
+  display: none;
+}
 
 nav {
   background-color: #fff;
@@ -649,6 +652,9 @@ footer .bottom .links a {
     display: none;
   }
 
+  .noneDisplay {
+    display: block;
+  }
   nav ul {
     gap: 20px;
   }

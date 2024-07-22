@@ -41,14 +41,14 @@ function Header() {
             Works
           </Link>
         </li>
-        {/* <li>
-          <Link to="/single-work" className={getClassName("/single-work")}>
-            Single Work
-          </Link>
-        </li> */}
         <li>
           <Link to="/blog" className={getClassName("/blog")}>
             Blog
+          </Link>
+        </li>
+        <li className="noneDisplay">
+          <Link to="/contact" className={getClassName("/contact ")}>
+            Contact
           </Link>
         </li>
       </ul>
