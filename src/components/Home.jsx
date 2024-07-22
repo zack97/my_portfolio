@@ -193,7 +193,7 @@ const Portfolio = () => {
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
               pariatur porro quaerat provident corporis facere ex voluptatibus
-              laudantium voluptates quos.
+              laudantium voluptates qidbwuwuos.
             </p>
           </div>
           <div className="post-item">
@@ -201,7 +201,7 @@ const Portfolio = () => {
             <div className="info">
               <h5>5 Jan 2024</h5>
               <h5>|</h5>
-              <h5>Design, UI, UX</h5>
+              <h5>Design,UI, UX</h5>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
