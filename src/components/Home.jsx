@@ -8,6 +8,7 @@ import "./Portfolio.css";
 import Footer from "./Footer";
 import Header from "./Header";
 import featuredWorks from "../model/featuredWorks";
+import posts from "../model/posts";
 
 const Home = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -23,6 +24,7 @@ const Home = () => {
   };
 
   const displayedWorks = showMore ? featuredWorks : featuredWorks.slice(0, 3);
+  const displayedPosts = posts.slice(0, 2);
 
   return (
     <>
@@ -38,12 +40,12 @@ const Home = () => {
               I am a passionate Full-Stack Developer currently preparing for my
               final year in Bachelor of Computer Management at EPHEC Belgium,
               starting September 2024. I recently completed intensive training
-              at BeCode Bootcamp, gaining expertise in JavaScript, React, and
-              Node.js. This experience enhanced my ability to deliver
-              high-quality, dynamic applications. I excel in both front-end and
-              back-end development, creating user-centric solutions. Committed
-              to continuous learning, I stay updated with industry trends and
-              enjoy contributing to open-source projects.
+              at BeCode Bootcamp, gaining expertise in JavaScript, React,
+              Node.js, Mysql, Laravel, Php, Java. This experience enhanced my
+              ability to deliver high-quality, dynamic applications. I excel in
+              both front-end and back-end development, creating user-centric
+              solutions. Committed to continuous learning, I stay updated with
+              industry trends and enjoy contributing to open-source projects.
             </p>
           </div>
           <button className="button" onClick={toggleExpand}>
@@ -59,6 +61,10 @@ const Home = () => {
           </a>
         </div>
         <img src={profile} alt="Profile" />
+      </div>
+
+      <div className="lineDiv">
+        <p className="spaceline"></p>
       </div>
 
       <div className="skills" id="skills">
@@ -137,38 +143,25 @@ const Home = () => {
 
       <div className="recent">
         <div className="header">
-          <h4>Recent Posts</h4>
+          <h4>
+            <b>BLOG</b> / Recent Posts
+          </h4>
           <Link to="/blog">
             <a>View all</a>
           </Link>
         </div>
         <div className="posts">
-          <div className="post-item">
-            <h3>Making a layout system from scratch</h3>
-            <div className="info">
-              <h5>12 Jan 2024</h5>
-              <h5>|</h5>
-              <h5>Design, Layout</h5>
+          {displayedPosts.map((post, index) => (
+            <div className="post-item" key={index}>
+              <h3>{post.title}</h3>
+              <div className="info">
+                <h5>{post.date}</h5>
+                <h5>|</h5>
+                <h5>{post.tags}</h5>
+              </div>
+              <p>{post.preview}</p>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              pariatur porro quaerat provident corporis facere ex voluptatibus
-              laudantium voluptates qidbwuwuos.
-            </p>
-          </div>
-          <div className="post-item">
-            <h3>Making a design system from scratch</h3>
-            <div className="info">
-              <h5>5 Jan 2024</h5>
-              <h5>|</h5>
-              <h5>Design,UI, UX</h5>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              pariatur porro quaerat provident corporis facere ex voluptatibus
-              laudantium voluptates quos.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
 

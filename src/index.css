@@ -102,7 +102,6 @@ nav button#menuButton {
 
 .main {
   /* background-color: #deebee; */
-  border-bottom: 3px solid #deebee;
   padding: 0 148px;
   display: flex;
   align-items: center;
@@ -145,6 +144,16 @@ nav button#menuButton {
   border-radius: 100px;
   box-shadow: 1px 0px 1px #1a237e;
   padding: 10px;
+}
+
+.lineDiv {
+  display: flex;
+  justify-content: center;
+}
+.spaceline {
+  height: 1px;
+  width: 50%;
+  box-shadow: 1px 1px 10px #333;
 }
 
 .skills {
@@ -784,7 +793,7 @@ footer .bottom .links a {
 
   .main img {
     margin-top: 20px;
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 50px;
   }
