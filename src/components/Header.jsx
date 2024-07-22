@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/zacklogo.png";
 
 function Header() {
+  const location = useLocation();
+
   useEffect(() => {
     const menuButton = document.getElementById("menuButton");
     menuButton.addEventListener("click", openMenu);
@@ -17,6 +19,11 @@ function Header() {
     nav.classList.toggle("open");
   }
 
+  // Determine which route is active
+  const getClassName = (path) => {
+    return location.pathname === path ? "selected" : "";
+  };
+
   return (
     <nav>
       <div className="logo">
@@ -25,23 +32,23 @@ function Header() {
       </div>
       <ul>
         <li>
-          <Link to="/">
-            <span className="selected">Home</span>
+          <Link to="/" className={getClassName("/")}>
+            Home
           </Link>
         </li>
         <li>
-          <Link to="/works">
-            <span>Works</span>
+          <Link to="/works" className={getClassName("/works")}>
+            Works
           </Link>
         </li>
         {/* <li>
-          <Link to="/single-work">
-            <span>Single Work</span>
+          <Link to="/single-work" className={getClassName("/single-work")}>
+            Single Work
           </Link>
         </li> */}
         <li>
-          <Link to="/blog">
-            <span>Blog</span>
+          <Link to="/blog" className={getClassName("/blog")}>
+            Blog
           </Link>
         </li>
       </ul>

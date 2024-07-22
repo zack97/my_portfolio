@@ -24,6 +24,10 @@ img {
   background-color: gray;
   margin: 20px;
 }
+.selected {
+  font-weight: bold;
+  color: #007bff;
+}
 
 nav {
   background-color: #fff;
