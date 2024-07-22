@@ -5,9 +5,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      react: require.resolve("react"),
-      "react-dom": require.resolve("react-dom"),
-      "react-router-dom": require.resolve("react-router-dom"),
+      react: "react",
+      "react-dom": "react-dom",
+      "react-router-dom": "react-router-dom",
     },
   },
 });
