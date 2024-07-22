@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/zacklogo.png";
 import profile from "../assets/profile_image1.jpg";
 import item1 from "../assets/item-1.jpg";
 import item2 from "../assets/item-2.jpg";
@@ -7,6 +6,8 @@ import item3 from "../assets/item-3.jpg";
 import { Link } from "react-router-dom";
 import "./Portfolio.css";
 import Footer from "./Footer";
+import Header from "./Header";
+import featuredWorks from "../model/featuredWorks";
 
 const Home = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -21,64 +22,11 @@ const Home = () => {
     setShowMore(true);
   };
 
-  const featuredWorks = [
-    {
-      img: item1,
-      title: "Ecommerce Website with PHP Laravel",
-      year: "2024",
-      tech: "PHP, Laravel",
-      description:
-        "An ecommerce platform developed using PHP and Laravel, featuring product management, shopping cart, and secure payment integration.",
-    },
-    {
-      img: item2,
-      title: "Dashboard Website with React",
-      year: "2024",
-      tech: "React",
-      description:
-        "A dynamic dashboard application built with React, offering real-time data visualization and interactive user interfaces.",
-    },
-    {
-      img: item3,
-      title: "Job Work Searching with React",
-      year: "2024",
-      tech: "React",
-      description:
-        "A job search application using React that allows users to find and apply for job listings with filters and user authentication.",
-    },
-  ];
-
-  // Show only the first 5 works initially
-  const displayedWorks = showMore ? featuredWorks : featuredWorks.slice(0, 5);
+  const displayedWorks = showMore ? featuredWorks : featuredWorks.slice(0, 3);
 
   return (
     <>
-      <nav>
-        <div className="logo">
-          <img src={logo} alt="Logo" />
-          <Link to="/">
-            <a>ZackProg</a>
-          </Link>
-        </div>
-        <div className="nav-links">
-          <Link to="/">
-            <a className="selected">Home</a>
-          </Link>
-          <Link to="/works">
-            <a>Works</a>
-          </Link>
-          <Link to="/single-work">
-            <a>Single Work</a>
-          </Link>
-          <Link to="/blog">
-            <a>Blog</a>
-          </Link>
-          <Link to="/contact">
-            <a>Contact</a>
-          </Link>
-        </div>
-      </nav>
-
+      <Header />
       <div className="main">
         <div className="info">
           <h2>

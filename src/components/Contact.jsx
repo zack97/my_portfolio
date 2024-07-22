@@ -3,35 +3,12 @@ import logo from "../assets/zacklogo.png";
 import profile from "../assets/profile_image1.jpg";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 const About = () => {
   return (
     <>
-      <nav>
-        <div className="logo">
-          <img src={logo} alt="Logo" />
-          <Link to="/">
-            <a>ZackProg</a>
-          </Link>
-        </div>
-        <div className="nav-links">
-          <Link to="/">
-            <a>Home</a>
-          </Link>
-          <Link to="/works">
-            <a>Works</a>
-          </Link>
-          <Link to="/single-work">
-            <a>Single Work</a>
-          </Link>
-          <Link to="/blog">
-            <a>Blog</a>
-          </Link>
-          <Link to="/contact">
-            <a className="selected">Contact</a>
-          </Link>
-        </div>
-      </nav>
+      <Header />
 
       <h1 className="page-title">About</h1>
 
