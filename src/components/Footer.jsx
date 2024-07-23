@@ -12,13 +12,13 @@ function Footer() {
         </div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <a href="/">Home</a>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <a href="/blog">Blog</a>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <a href="/contact">Contact</a>
           </li>
           <li>
             <a href="https://github.com/zack97">Github</a>
