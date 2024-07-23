@@ -5,7 +5,7 @@ import item3 from "../assets/item-3.jpg";
 const featuredWorks = [
   {
     img: item1,
-    title: "Ecommerce Website with PHP Laravel",
+    title: "Ecommerce App",
     year: "2024",
     tech: "PHP, Laravel",
     description:
@@ -13,7 +13,7 @@ const featuredWorks = [
   },
   {
     img: item2,
-    title: "Dashboard Website with React",
+    title: "Dashboard App",
     year: "2024",
     tech: "React",
     description:
@@ -21,7 +21,7 @@ const featuredWorks = [
   },
   {
     img: item3,
-    title: "Job Work Searching with React",
+    title: "Job Searching App",
     year: "2024",
     tech: "React",
     description:
@@ -29,7 +29,7 @@ const featuredWorks = [
   },
   {
     img: item1,
-    title: "Password Generator with Java",
+    title: "Password Generator",
     year: "2024",
     tech: "Java",
     description:
@@ -37,7 +37,7 @@ const featuredWorks = [
   },
   {
     img: item2,
-    title: "QR Generator with Java",
+    title: "QR Generator",
     year: "2024",
     tech: "Java",
     description:
@@ -45,7 +45,7 @@ const featuredWorks = [
   },
   {
     img: item3,
-    title: "Detect Device Battery with JavaScript",
+    title: "Detect Device Battery",
     year: "2024",
     tech: "JavaScript",
     description:
@@ -53,7 +53,7 @@ const featuredWorks = [
   },
   {
     img: item1,
-    title: "Translator App with React",
+    title: "Translator App",
     year: "2024",
     tech: "React",
     description:
@@ -61,7 +61,7 @@ const featuredWorks = [
   },
   {
     img: item2,
-    title: "Budget App with React",
+    title: "Budget App",
     year: "2024",
     tech: "React",
     description:
@@ -69,7 +69,7 @@ const featuredWorks = [
   },
   {
     img: item3,
-    title: "Chat GPT Bot with JavaScript",
+    title: "Chat GPT Bot",
     year: "2024",
     tech: "JavaScript",
     description:
@@ -77,7 +77,7 @@ const featuredWorks = [
   },
   {
     img: item1,
-    title: "Chess Game with React",
+    title: "Chess Game",
     year: "2024",
     tech: "React",
     description:
