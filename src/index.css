@@ -869,6 +869,12 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 500px) {
+  .featured .item img,
+  .works-list .item img {
+    width: 100%;
+    height: 200px;
+    padding: 0px 10px;
+  }
   .info {
     padding-left: 25px;
   }

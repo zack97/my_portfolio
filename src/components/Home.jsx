@@ -178,10 +178,7 @@ const Home = () => {
               </div>
               <p>{work.description}</p>
               <div>
-                <a
-                  href="https://jobs-searching.netlify.app/"
-                  className=" a-backgroung"
-                >
+                <a href={work.link} className=" a-backgroung">
                   View
                 </a>
               </div>
