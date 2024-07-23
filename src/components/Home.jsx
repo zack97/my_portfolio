@@ -177,6 +177,14 @@ const Home = () => {
                 <h4>{work.tech}</h4>
               </div>
               <p>{work.description}</p>
+              <div>
+                <a
+                  href="https://jobs-searching.netlify.app/"
+                  className=" a-backgroung"
+                >
+                  View
+                </a>
+              </div>
             </div>
           </div>
         ))}

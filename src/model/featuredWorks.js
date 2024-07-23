@@ -1,6 +1,7 @@
 import item1 from "../assets/item-1.jpg";
 import item2 from "../assets/item-2.jpg";
 import item3 from "../assets/item-3.jpg";
+import jobsearching from "../assets/projet_Job_Searching_image.png";
 
 const featuredWorks = [
   {
@@ -20,7 +21,7 @@ const featuredWorks = [
       "A dynamic dashboard application built with React, offering real-time data visualization and interactive user interfaces.",
   },
   {
-    img: item3,
+    img: jobsearching,
     title: "Job Searching App",
     year: "2024",
     tech: "React",
