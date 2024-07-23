@@ -48,7 +48,7 @@ const Contact = () => {
       <Header />
 
       <div className="content">
-        <h1 className="page-title">Contact</h1>
+        <h1 className="page-title">Contact me</h1>
         <div className="container">
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
