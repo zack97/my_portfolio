@@ -48,7 +48,7 @@ function Header() {
         </li>
         <li className="noneDisplay">
           <Link to="/contact" className={getClassName("/contact ")}>
-            Contact
+            Contact me
           </Link>
         </li>
       </ul>
