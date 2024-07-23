@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profile from "../assets/zackimage.jpg";
+import profile from "../assets/zackimagenoir.jpg";
 import { Link } from "react-router-dom";
 import "./Portfolio.css";
 import Footer from "./Footer";
