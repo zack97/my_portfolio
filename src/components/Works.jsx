@@ -23,6 +23,11 @@ const Works = () => {
                   <h4>{work.tech}</h4>
                 </div>
                 <p>{work.description}</p>
+                <div>
+                  <a href={work.link} className=" a-backgroung">
+                    View
+                  </a>
+                </div>
               </div>
             </div>
           ))}
