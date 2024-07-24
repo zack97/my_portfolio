@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 import Header from "./Header";
 import featuredWorks from "../model/featuredWorks";
 

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 import Header from "./Header";
 import posts from "../model/posts";
 import { useTranslation } from "react-i18next"; // Import the hook

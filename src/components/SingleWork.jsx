@@ -1,10 +1,6 @@
 import React from "react";
-import logo from "../assets/zacklogo.png";
-import singlePost1 from "../assets/single-post-1.png";
-import singlePost2 from "../assets/single-post-2.png";
 import featuredWorks from "../model/featuredWorks"; // Import the featuredWorks array
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 import Header from "./Header";
 
 const SingleWork = () => {
