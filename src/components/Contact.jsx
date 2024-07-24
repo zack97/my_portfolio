@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 import "./Contact.css";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -30,7 +32,7 @@ const Contact = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          alert("Message sent successfully!");
+          alert(t("contact.success"));
           setName("");
           setEmail("");
           setSubject("");
@@ -38,7 +40,7 @@ const Contact = () => {
         },
         (err) => {
           console.log("FAILED...", err);
-          alert("Failed to send the message, please try again.");
+          alert(t("contact.failure"));
         }
       );
   };
@@ -48,11 +50,11 @@ const Contact = () => {
       <Header />
 
       <div className="content">
-        <h1 className="page-title">Contact me</h1>
+        <h1 className="page-title">{t("contactForm.title")}</h1>
         <div className="container">
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">{t("contactForm.name")}</label>
               <input
                 type="text"
                 id="name"
@@ -63,7 +65,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t("contactForm.email")}</label>
               <input
                 type="email"
                 id="email"
@@ -74,7 +76,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">{t("contactForm.subject")}</label>
               <input
                 type="text"
                 id="subject"
@@ -85,7 +87,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">{t("contactForm.message")}</label>
               <textarea
                 id="message"
                 name="message"
@@ -94,7 +96,7 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit">{t("contactForm.send")}</button>
           </form>
         </div>
       </div>

@@ -3,8 +3,10 @@ import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import posts from "../model/posts";
+import { useTranslation } from "react-i18next"; // Import the hook
 
 const Blog = () => {
+  const { t } = useTranslation(); // Destructure `t` from the hook
   const [expandedPost, setExpandedPost] = useState(null);
 
   const handleReadMore = (index) => {
@@ -23,31 +25,34 @@ const Blog = () => {
         .catch((error) => console.log("Error sharing", error));
     } else {
       navigator.clipboard.writeText(window.location.href);
-      alert("URL copied to clipboard");
+      alert(t("urlCopied")); // Use the translation key
     }
   };
 
   const handleCopyLink = (index) => {
     const postUrl = `${window.location.origin}/blog#post-${index}`;
     navigator.clipboard.writeText(postUrl);
-    alert("Post URL copied to clipboard");
+    alert(t("postUrlCopied")); // Use the translation key
   };
 
   return (
     <>
       <Header />
-
-      <h1 className="page-title">Blog</h1>
-
+      <h1 className="page-title">{t("blogTitle")}</h1>{" "}
+      {/* Use translation key */}
       <div className="content">
         <div className="post-list">
           {posts.map((post, index) => (
             <div className="post-item" key={index} id={`post-${index}`}>
               <h3>{post.title}</h3>
               <div className="info">
-                <h5>{post.date}</h5>
+                <h5>
+                  {t("postDate")}: {post.date}
+                </h5>
                 <h5>|</h5>
-                <h5>{post.tags}</h5>
+                <h5>
+                  {t("postTags")}: {post.tags}
+                </h5>
               </div>
               <p>{expandedPost === index ? post.fullText : post.preview}</p>
               <div className="buttons">
@@ -65,14 +70,13 @@ const Blog = () => {
                 ></i>
                 <i className="bx bx-bookmark-plus"></i>
                 <button onClick={() => handleReadMore(index)}>
-                  {expandedPost === index ? "Read Less" : "Read More"}
+                  {expandedPost === index ? t("readLess") : t("readMore")}
                 </button>
               </div>
             </div>
           ))}
         </div>
       </div>
-
       <Footer />
     </>
   );

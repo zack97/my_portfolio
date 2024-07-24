@@ -40,17 +40,17 @@ function Header() {
       <ul>
         <li>
           <Link to="/" className={getClassName("/")}>
-            {t("home")}
+            {t("Home")}
           </Link>
         </li>
         <li>
           <Link to="/works" className={getClassName("/works")}>
-            {t("works")}
+            {t("Works")}
           </Link>
         </li>
         <li>
           <Link to="/blog" className={getClassName("/blog")}>
-            {t("blog")}
+            {t("Blog")}
           </Link>
         </li>
         <li className="noneDisplay">
