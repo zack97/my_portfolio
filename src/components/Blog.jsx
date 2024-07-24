@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import posts from "../model/posts";
-import { useTranslation } from "react-i18next"; // Import the hook
+import { useTranslation } from "react-i18next";
 
 const Blog = () => {
-  const { t } = useTranslation(); // Destructure `t` from the hook
+  const { t } = useTranslation();
   const [expandedPost, setExpandedPost] = useState(null);
 
   const handleReadMore = (index) => {
@@ -37,8 +37,7 @@ const Blog = () => {
   return (
     <>
       <Header />
-      <h1 className="page-title">{t("blogTitle")}</h1>{" "}
-      {/* Use translation key */}
+      <h1 className="page-title">{t("blogTitle")}</h1>
       <div className="content">
         <div className="post-list">
           {posts.map((post, index) => (

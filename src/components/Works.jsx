@@ -2,8 +2,11 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import featuredWorks from "../model/featuredWorks";
+import { useTranslation } from "react-i18next";
 
 const Works = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Header />
@@ -24,10 +27,10 @@ const Works = () => {
                 <p>{work.description}</p>
                 <div className="viewgitub">
                   <a href={work.link} className=" a-backgroung">
-                    View
+                    {t("view")}
                   </a>
                   <a href={work.linkcode} className=" a-backgroung">
-                    Code source
+                    {t("codeSource")}
                   </a>
                 </div>
               </div>
