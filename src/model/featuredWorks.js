@@ -12,6 +12,7 @@ const featuredWorks = [
     description:
       "An ecommerce platform developed using PHP and Laravel, featuring product management, shopping cart, and secure payment integration.",
     link: "#",
+    linkcode: "#",
   },
   {
     img: item2,
@@ -21,6 +22,7 @@ const featuredWorks = [
     description:
       "A dynamic dashboard application built with React, offering real-time data visualization and interactive user interfaces.",
     link: "#",
+    linkcode: "#",
   },
   {
     img: jobsearching,
@@ -30,6 +32,7 @@ const featuredWorks = [
     description:
       "A job search application using React that allows users to find and apply for job listings with filters and user authentication.",
     link: "https://jobs-searching.netlify.app",
+    linkcode: "https://github.com/zack97/JobSearchApp",
   },
   {
     img: item1,
@@ -39,6 +42,7 @@ const featuredWorks = [
     description:
       "A secure password generator built in Java, featuring customizable options for length and complexity.",
     link: "#",
+    linkcode: "#",
   },
   {
     img: item2,
@@ -48,6 +52,7 @@ const featuredWorks = [
     description:
       "A Java application that generates QR codes for various types of data, including URLs and text.",
     link: "#",
+    linkcode: "#",
   },
   {
     img: item3,
@@ -57,6 +62,7 @@ const featuredWorks = [
     description:
       "A JavaScript utility to detect and display the device's battery status in real-time.",
     link: "#",
+    linkcode: "#",
   },
   {
     img: item1,
@@ -66,6 +72,7 @@ const featuredWorks = [
     description:
       "A translation application built with React, allowing users to translate text between multiple languages.",
     link: "#",
+    linkcode: "#",
   },
   {
     img: item2,
@@ -84,6 +91,7 @@ const featuredWorks = [
     description:
       "A chatbot application utilizing GPT technology, developed using JavaScript for interactive conversations.",
     link: "#",
+    linkcode: "#",
   },
   {
     img: item1,
@@ -93,6 +101,7 @@ const featuredWorks = [
     description:
       "A chess game built with React, featuring real-time gameplay and chessboard interactions.",
     link: "#",
+    linkcode: "#",
   },
 ];
 

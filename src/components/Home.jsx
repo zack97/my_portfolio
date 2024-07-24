@@ -177,9 +177,12 @@ const Home = () => {
                 <h4>{work.tech}</h4>
               </div>
               <p>{work.description}</p>
-              <div>
+              <div className="viewgitub">
                 <a href={work.link} className=" a-backgroung">
                   View
+                </a>
+                <a href={work.linkcode} className=" a-backgroung">
+                  Code source
                 </a>
               </div>
             </div>
