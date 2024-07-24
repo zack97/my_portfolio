@@ -30,14 +30,15 @@ const Home = () => {
         <div className="info">
           <h2>
             Hello, I'm Zacharie, <br />
-            Full-Stack Developer | Creative Problem Solver
+            Software Developer | Creative Problem Solver
           </h2>
           <div className={`profile-text ${isExpanded ? "expanded" : ""}`}>
             <p>
-              I am a passionate Full-Stack Developer currently preparing for my
-              final year in Bachelor of Computer Management at EPHEC Belgium,
-              starting September 2024. I recently completed intensive training
-              at BeCode Bootcamp, gaining expertise in JavaScript, React,
+              I am a passionate Software Developer currently preparing for my
+              final year in Computer Science - Application Development
+              Orientation at EPHEC Belgium, starting September 2024. I recently
+              completed intensive training in Software Development at BeCode
+              Bootcamp brussels, gaining expertise in JavaScript, React,
               Node.js, Mysql, Laravel, Php, Java. This experience enhanced my
               ability to deliver high-quality, dynamic applications. I excel in
               both front-end and back-end development, creating user-centric
