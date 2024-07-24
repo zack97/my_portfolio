@@ -61,9 +61,6 @@ function Header() {
       </ul>
 
       <div className="menuLangues">
-        <button id="menuButton">
-          <i className="bx bx-menu"></i>
-        </button>
         <div className="language-select">
           <select onChange={handleLanguageChange} value={i18n.language}>
             <option value="en">En</option>
@@ -75,6 +72,9 @@ function Header() {
             style={{ width: "20px", height: "20px", marginLeft: "5px" }}
           />
         </div>
+        <button id="menuButton">
+          <i className="bx bx-menu"></i>
+        </button>
         <button>
           <Link to="/contact">{t("contact")}</Link>
         </button>
