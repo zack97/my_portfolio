@@ -30,7 +30,7 @@ const Home = () => {
         <div className="info">
           <h2>
             Hello, I'm Zacharie, <br />
-            Software Developer | Creative Problem Solver
+            Software Developer | Tech enthusiast
           </h2>
           <div className={`profile-text ${isExpanded ? "expanded" : ""}`}>
             <p>
