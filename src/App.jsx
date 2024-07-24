@@ -6,6 +6,7 @@ import Works from "./components/Works";
 import SingleWork from "./components/SingleWork";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
+import "./i18n";
 
 const App = () => {
   return (

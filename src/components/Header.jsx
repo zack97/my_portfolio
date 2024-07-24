@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logo from "../assets/zacklogo.png";
+import enFlag from "../assets/england_flag.jpg";
+import frFlag from "../assets/france_flag.jpg";
 
 function Header() {
+  const { t, i18n } = useTranslation();
   const location = useLocation();
 
   useEffect(() => {
@@ -19,9 +23,12 @@ function Header() {
     nav.classList.toggle("open");
   }
 
-  // Determine which route is active
   const getClassName = (path) => {
     return location.pathname === path ? "selected" : "";
+  };
+
+  const handleLanguageChange = (e) => {
+    i18n.changeLanguage(e.target.value);
   };
 
   return (
@@ -33,31 +40,45 @@ function Header() {
       <ul>
         <li>
           <Link to="/" className={getClassName("/")}>
-            Home
+            {t("home")}
           </Link>
         </li>
         <li>
           <Link to="/works" className={getClassName("/works")}>
-            Works
+            {t("works")}
           </Link>
         </li>
         <li>
           <Link to="/blog" className={getClassName("/blog")}>
-            Blog
+            {t("blog")}
           </Link>
         </li>
         <li className="noneDisplay">
-          <Link to="/contact" className={getClassName("/contact ")}>
-            Contact me
+          <Link to="/contact" className={getClassName("/contact")}>
+            {t("contact")}
           </Link>
         </li>
       </ul>
-      <button>
-        <Link to="/contact">Contact me</Link>
-      </button>
-      <button id="menuButton">
-        <i className="bx bx-menu"></i>
-      </button>
+
+      <div className="menuLangues">
+        <button id="menuButton">
+          <i className="bx bx-menu"></i>
+        </button>
+        <div className="language-select">
+          <select onChange={handleLanguageChange} value={i18n.language}>
+            <option value="en">En</option>
+            <option value="fr">Fr</option>
+          </select>
+          <img
+            src={i18n.language === "en" ? enFlag : frFlag}
+            alt={i18n.language === "en" ? "English" : "Français"}
+            style={{ width: "20px", height: "20px", marginLeft: "5px" }}
+          />
+        </div>
+        <button>
+          <Link to="/contact">{t("contact")}</Link>
+        </button>
+      </div>
     </nav>
   );
 }
