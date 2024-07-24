@@ -889,6 +889,18 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 500px) {
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  .menuLangues {
+    gap: 5px;
+  }
+
+  /* #menuButton {
+    height: 30px;
+  } */
+
   .featured .item img,
   .works-list .item img {
     width: 100%;
