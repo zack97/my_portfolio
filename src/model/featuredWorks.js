@@ -2,6 +2,7 @@ import item1 from "../assets/item-1.jpg";
 import item2 from "../assets/item-2.jpg";
 import item3 from "../assets/item-3.jpg";
 import jobsearching from "../assets/projet_Job_Searching_image.png";
+import budgetapp from "../assets/budgetmanagering_image.png";
 
 const featuredWorks = [
   {
@@ -15,15 +16,16 @@ const featuredWorks = [
     linkcode: "#",
   },
   {
-    img: item2,
-    title: "Dashboard App",
+    img: budgetapp,
+    title: "Budget App",
     year: "2024",
     tech: "React",
     description:
-      "A dynamic dashboard application built with React, offering real-time data visualization and interactive user interfaces.",
-    link: "#",
-    linkcode: "#",
+      "A budgeting application built with React, featuring expense tracking and financial insights.",
+    link: "http://budget-managering.infinityfreeapp.com/",
+    linkcode: "https://github.com/zack97/BudgetApp",
   },
+
   {
     img: jobsearching,
     title: "Job Searching App",
@@ -34,6 +36,17 @@ const featuredWorks = [
     link: "https://jobs-searching.netlify.app",
     linkcode: "https://github.com/zack97/JobSearchApp",
   },
+  {
+    img: item2,
+    title: "Dashboard App",
+    year: "2024",
+    tech: "React",
+    description:
+      "A dynamic dashboard application built with React, offering real-time data visualization and interactive user interfaces.",
+    link: "#",
+    linkcode: "#",
+  },
+
   {
     img: item1,
     title: "Password Generator",
@@ -74,16 +87,7 @@ const featuredWorks = [
     link: "#",
     linkcode: "#",
   },
-  {
-    img: item2,
-    title: "Budget App",
-    year: "2024",
-    tech: "React",
-    description:
-      "A budgeting application built with React, featuring expense tracking and financial insights.",
-    link: "https://budget-managering.infinityfreeapp.com/",
-    linkcode: "https://github.com/zack97/BudgetApp",
-  },
+
   {
     img: item3,
     title: "Chat GPT Bot",
