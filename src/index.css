@@ -841,7 +841,7 @@ footer .bottom .links a {
   .main img {
     margin-top: 20px;
     width: 50%;
-    height: auto;
+    height: 400px;
     border-radius: 50px;
   }
 
@@ -914,9 +914,9 @@ footer .bottom .links a {
     width: 100%;
   }
 
-  .main img {
+  /* .main img {
     width: 70%;
-  }
+  } */
 
   .load-more-button {
     width: auto;
