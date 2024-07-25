@@ -25,13 +25,13 @@ function Footer() {
           </li>
         </ul>
         <div className="social-links">
-          <a href="#">
+          <a href="https://www.facebook.com/zack.tshi">
             <i className="bx bxl-facebook"></i>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/_zacharie3">
             <i className="bx bxl-instagram"></i>
           </a>
-          <a href="#">
+          <a href="https://x.com/_zacharie3">
             <i className="bx bxl-twitter"></i>
           </a>
           <a href="https://www.linkedin.com/in/zacharie3/">
