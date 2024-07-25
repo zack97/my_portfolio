@@ -1,6 +1,6 @@
-import item1 from "../assets/item-1.jpg";
-import item2 from "../assets/item-2.jpg";
-import item3 from "../assets/item-3.jpg";
+import item1 from "../assets/image_off_sites.png";
+import item2 from "../assets/image_off_sites.png";
+import item3 from "../assets/image_off_sites.png";
 import jobsearching from "../assets/projet_Job_Searching_image.png";
 import budgetapp from "../assets/budgetmanagering_image.png";
 
