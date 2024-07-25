@@ -31,7 +31,7 @@ const featuredWorks = [
     tech: "React",
     description:
       "A job search application using React that allows users to find and apply for job listings with filters and user authentication.",
-    link: "http://budget-managering.infinityfreeapp.com/",
+    link: "https://jobs-searching.netlify.app",
     linkcode: "https://github.com/zack97/JobSearchApp",
   },
   {
@@ -81,7 +81,8 @@ const featuredWorks = [
     tech: "React",
     description:
       "A budgeting application built with React, featuring expense tracking and financial insights.",
-    link: "#",
+    link: "https://budget-managering.infinityfreeapp.com/",
+    linkcode: "https://github.com/zack97/BudgetApp",
   },
   {
     img: item3,
