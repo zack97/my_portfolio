@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profile from "../assets/profile4.png";
+import profile from "../assets/profile3.jpg";
 import { Link } from "react-router-dom";
 import "./Portfolio.css";
 import Footer from "./Footer";
