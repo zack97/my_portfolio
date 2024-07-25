@@ -22,7 +22,7 @@ const featuredWorks = [
     tech: "React",
     description:
       "A budgeting application built with React, featuring expense tracking and financial insights.",
-    link: "http://budget-managering.infinityfreeapp.com/",
+    link: "#", //http://budget-managering.infinityfreeapp.com/
     linkcode: "https://github.com/zack97/BudgetApp",
   },
 
