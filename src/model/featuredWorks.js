@@ -32,7 +32,7 @@ const featuredWorks = [
     year: "2024",
     tech: "React",
     description:
-      "A job search application using React that allows users to find and apply for job listings with filters and user authentication.",
+      "A job search application using React that allows users to find  job listings with filters",
     link: "https://jobs-searching.netlify.app",
     linkcode: "https://github.com/zack97/JobSearchApp",
   },
