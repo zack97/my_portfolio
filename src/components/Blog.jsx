@@ -31,7 +31,7 @@ const Blog = () => {
   const handleCopyLink = (index) => {
     const postUrl = `${window.location.origin}/blog#post-${index}`;
     navigator.clipboard.writeText(postUrl);
-    alert(t("postUrlCopied")); // Use the translation key
+    alert(t("postUrlCopied")); // Use the translation key ceefnee
   };
 
   return (

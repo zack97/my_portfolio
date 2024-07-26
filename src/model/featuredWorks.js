@@ -3,6 +3,7 @@ import item2 from "../assets/image_off_sites.png";
 import item3 from "../assets/image_off_sites.png";
 import jobsearching from "../assets/projet_Job_Searching_image.png";
 import budgetapp from "../assets/budgetappimage.png";
+import passwordgenerator from "../assets/passwordgenerator.png";
 
 const featuredWorks = [
   {
@@ -36,26 +37,16 @@ const featuredWorks = [
     link: "https://jobs-searching.netlify.app",
     linkcode: "https://github.com/zack97/JobSearchApp",
   },
+
   {
-    img: item2,
-    title: "Dashboard App",
+    img: passwordgenerator,
+    title: "Password Generator",
     year: "2024",
     tech: "React",
     description:
-      "A dynamic dashboard application built with React, offering real-time data visualization and interactive user interfaces.",
-    link: "#",
-    linkcode: "#",
-  },
-
-  {
-    img: item1,
-    title: "Password Generator",
-    year: "2024",
-    tech: "Java",
-    description:
-      "A secure password generator built in Java, featuring customizable options for length and complexity.",
-    link: "#",
-    linkcode: "#",
+      "A secure password generator built in React, featuring customizable options for length and complexity.",
+    link: "https://passwordgenerating.netlify.app/",
+    linkcode: "https://github.com/zack97/passwordGenerator",
   },
   {
     img: item2,
@@ -95,6 +86,17 @@ const featuredWorks = [
     tech: "JavaScript",
     description:
       "A chatbot application utilizing GPT technology, developed using JavaScript for interactive conversations.",
+    link: "#",
+    linkcode: "#",
+  },
+
+  {
+    img: item2,
+    title: "Dashboard App",
+    year: "2024",
+    tech: "React",
+    description:
+      "A dynamic dashboard application built with React, offering real-time data visualization and interactive user interfaces.",
     link: "#",
     linkcode: "#",
   },
