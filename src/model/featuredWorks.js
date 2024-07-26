@@ -2,7 +2,7 @@ import item1 from "../assets/image_off_sites.png";
 import item2 from "../assets/image_off_sites.png";
 import item3 from "../assets/image_off_sites.png";
 import jobsearching from "../assets/projet_Job_Searching_image.png";
-import budgetapp from "../assets/budgetmanagering_image.png";
+import budgetapp from "../assets/budgetappimage.png";
 
 const featuredWorks = [
   {
