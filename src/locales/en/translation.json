@@ -15,7 +15,7 @@
   },
 
   "greeting": "Hello, I'm {{name}},",
-  "title": "Software Developer | Tech enthusiast",
+  "title": "Junior Software Developer | Tech enthusiast",
   "introduction": "I am a passionate Software Developer currently preparing for my final year in Computer Science - Application Development Orientation at EPHEC Belgium, starting September 2024. I recently completed intensive training in Software Development at BeCode Bootcamp brussels, gaining expertise in JavaScript, React, Node.js, Mysql, Laravel, Php, Java. This experience enhanced my ability to deliver high-quality, dynamic applications. I excel in both front-end and back-end development, creating user-centric solutions. Committed to continuous learning, I stay updated with industry trends and enjoy contributing to open-source projects.",
   "showLess": "Show Less",
   "readMore": "Read More",
