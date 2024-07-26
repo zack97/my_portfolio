@@ -59,6 +59,16 @@ const featuredWorks = [
     linkcode: "#",
   },
   {
+    img: item2,
+    title: "Service Booking",
+    year: "2024",
+    tech: "Java",
+    description:
+      "My Service Booking web application streamlines appointment scheduling by allowing users to book, modify, and cancel services effortlessly online. It offers real-time availability updates and automated reminders to enhance user experience and minimize no-shows. ",
+    link: "#",
+    linkcode: "#",
+  },
+  {
     img: item3,
     title: "Detect Device Battery",
     year: "2024",
