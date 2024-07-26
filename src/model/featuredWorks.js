@@ -21,7 +21,7 @@ const featuredWorks = [
     year: "2024",
     tech: "PHP",
     description:
-      "A budgeting application built with React, featuring expense tracking and financial insights.",
+      "A budgeting application built with PHP, featuring expense tracking and financial insights.",
     link: "http://budgetgenerators.infinityfreeapp.com/", //http://budget-managering.infinityfreeapp.com/
     linkcode: "https://github.com/zack97/BudgetApp",
   },
