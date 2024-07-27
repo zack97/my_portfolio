@@ -5,6 +5,7 @@ import jobsearching from "../assets/projet_Job_Searching_image.png";
 import budgetapp from "../assets/budgetappimage.png";
 import passwordgenerator from "../assets/passwordgenerator.png";
 import qrgeneratorimage from "../assets/qrgeneratorimage.png";
+import batterydetectorimage from "../assets/batterydetectorimage.png";
 
 const featuredWorks = [
   {
@@ -70,14 +71,14 @@ const featuredWorks = [
     linkcode: "#",
   },
   {
-    img: item3,
+    img: batterydetectorimage,
     title: "Detect Device Battery",
     year: "2024",
     tech: "JavaScript",
     description:
       "A JavaScript utility to detect and display the device's battery status in real-time.",
-    link: "#",
-    linkcode: "#",
+    link: "https://battery-detectors.netlify.app/",
+    linkcode: "https://github.com/zack97/battery-detector",
   },
   {
     img: item1,
