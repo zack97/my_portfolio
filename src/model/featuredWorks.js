@@ -4,6 +4,7 @@ import item3 from "../assets/image_off_sites.png";
 import jobsearching from "../assets/projet_Job_Searching_image.png";
 import budgetapp from "../assets/budgetappimage.png";
 import passwordgenerator from "../assets/passwordgenerator.png";
+import qrgeneratorimage from "../assets/qrgeneratorimage.png";
 
 const featuredWorks = [
   {
@@ -49,14 +50,14 @@ const featuredWorks = [
     linkcode: "https://github.com/zack97/passwordGenerator",
   },
   {
-    img: item2,
+    img: qrgeneratorimage,
     title: "QR Generator",
     year: "2024",
-    tech: "Java",
+    tech: "Javascript",
     description:
-      "A Java application that generates QR codes for various types of data, including URLs and text.",
-    link: "#",
-    linkcode: "#",
+      "A QR application that generates QR codes for various types of data, including URLs and text.",
+    link: "https://qr-generato.netlify.app/",
+    linkcode: "https://github.com/zack97/qrgenerator",
   },
   {
     img: item2,
