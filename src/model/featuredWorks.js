@@ -6,6 +6,7 @@ import budgetapp from "../assets/budgetappimage.png";
 import passwordgenerator from "../assets/passwordgenerator.png";
 import qrgeneratorimage from "../assets/qrgeneratorimage.png";
 import batterydetectorimage from "../assets/batterydetectorimage.png";
+import translatorimage from "../assets/translator_app.jpg";
 
 const featuredWorks = [
   {
@@ -81,14 +82,14 @@ const featuredWorks = [
     linkcode: "https://github.com/zack97/battery-detector",
   },
   {
-    img: item1,
+    img: translatorimage,
     title: "Translator App",
     year: "2024",
-    tech: "React",
+    tech: "Javascript/React",
     description:
       "A translation application built with React, allowing users to translate text between multiple languages.",
-    link: "#",
-    linkcode: "#",
+    link: "https://translator-zack.netlify.app/",
+    linkcode: "https://github.com/zack97/translator_app",
   },
 
   {
