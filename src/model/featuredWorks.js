@@ -7,8 +7,18 @@ import passwordgenerator from "../assets/passwordgenerator.png";
 import qrgeneratorimage from "../assets/qrgeneratorimage.png";
 import batterydetectorimage from "../assets/batterydetectorimage.png";
 import translatorimage from "../assets/translator_app.jpg";
+import pathfinderbrussels from "../assets/help-info-image.png";
 
 const featuredWorks = [
+  {
+    img: pathfinderbrussels,
+    title: "Path-Finder Brussels App",
+    year: "2024",
+    tech: "React, Vite",
+    description: "A place searching platform developed using React",
+    link: "https://pathfinderbrussels.netlify.app/",
+    linkcode: "https://github.com/zack97/pathfinderbrussels",
+  },
   {
     img: item1,
     title: "Ecommerce App",
